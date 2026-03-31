@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "birley"
+version = "0.1.0"
+description = "A project using notebooklm-py"
+requires-python = ">=3.10"
+dependencies = [
+    "notebooklm-py",
+]
+
+[project.optional-dependencies]
+browser = [
+    "notebooklm-py[browser]",
+]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
