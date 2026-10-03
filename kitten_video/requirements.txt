@@ -1,0 +1,5 @@
+numpy
+scipy
+pillow
+pillow-heif
+piper-tts

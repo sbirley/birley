@@ -14,3 +14,7 @@ env/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+
+# kitten video
+kitten_video/.cache/
+kitten_video/output/
