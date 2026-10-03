@@ -17,3 +17,6 @@ env/
 
 # Impeccable engine binary (downloaded and checksum-verified on first run)
 .claude/skills/impeccable/scripts/bin/
+
+# Personal Claude Code settings
+.claude/settings.local.json
