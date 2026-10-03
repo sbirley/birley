@@ -6,6 +6,9 @@ if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
   exit 0
 fi
 
+# Run in the background so the session starts without waiting.
+echo '{"async": true, "asyncTimeout": 300000}'
+
 # playwright-cli: the skill in .claude/skills/playwright-cli drives this CLI.
 # Pinned to the version the skill was installed from.
 PLAYWRIGHT_CLI_VERSION=0.1.22
