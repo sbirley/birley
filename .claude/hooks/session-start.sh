@@ -38,3 +38,9 @@ IMPECCABLE="$CLAUDE_PROJECT_DIR/.claude/skills/impeccable/scripts/impeccable"
 if [ -f "$IMPECCABLE" ]; then
   "$IMPECCABLE" engine-probe >/dev/null 2>&1 || echo "impeccable engine prefetch failed; it will retry on first use" >&2
 fi
+
+# Python packages for the Gemini-backed generators in .claude/skills/design
+# (logo, icon, CIP). They read GEMINI_API_KEY from the environment.
+if ! python3 -c "import google.genai, PIL" >/dev/null 2>&1; then
+  pip install -q --root-user-action=ignore google-genai pillow >/dev/null
+fi
