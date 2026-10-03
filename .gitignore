@@ -20,3 +20,5 @@ env/
 
 # Personal Claude Code settings
 .claude/settings.local.json
+# Playwright CLI output (may contain credentials)
+.playwright-cli/

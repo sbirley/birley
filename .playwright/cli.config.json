@@ -1,0 +1,1 @@
+{ "browser": { "browserName": "chromium", "launchOptions": { "channel": "chromium", "executablePath": "/opt/pw-browsers/chromium", "headless": true } } }
