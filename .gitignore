@@ -14,3 +14,6 @@ env/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+
+# Impeccable engine binary (downloaded and checksum-verified on first run)
+.claude/skills/impeccable/scripts/bin/
